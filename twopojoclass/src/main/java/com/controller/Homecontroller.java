@@ -25,6 +25,7 @@ public class Homecontroller {
 	{
 		
 		System.out.println("login page");
+		System.out.println("branch added");
 		
 		return "Login";
 	}
