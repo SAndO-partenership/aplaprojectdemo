@@ -32,6 +32,7 @@ public class Homecontroller {
 	@RequestMapping("/register")
 	public String RegisterPage()
 	{
+                
 		
 		System.out.println("register page");
 		
@@ -66,7 +67,7 @@ public class Homecontroller {
 	@RequestMapping("/login")
 public ModelAndView Login(@ModelAttribute User u,@ModelAttribute Login l)
 {
-		
+	System.out.println("om is on");	
 	System.out.println("in login");
 	Login lo=service.findAllByUsernameAndPassword(l.getUsername(),l.getPassword());
 	
